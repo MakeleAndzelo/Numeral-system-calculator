@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  background: #a593e0;
+  font-family: 'Lato', sans-serif; }
+
+.button {
+  position: relative;
+  width: 70%;
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+  margin: 1rem auto;
+  border-radius: 5px;
+  background: #a593e0;
+  border: 0;
+  text-align: center;
+  padding: 20px 30px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 9px 0px #544b74;
+  -moz-box-shadow: 0px 9px 0px #544b74;
+  box-shadow: 0px 9px 0px #544b74; }
+  .button:active {
+    -webkit-box-shadow: 0px 2px 0px #544b74;
+    -moz-box-shadow: 0px 2px 0px #544b74;
+    box-shadow: 0px 2px 0px #544b74;
+    position: relative;
+    top: 7px; }
+
+.special_button {
+  position: relative;
+  width: 3rem;
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+  margin: 1rem auto;
+  border-radius: 5px;
+  background: #a593e0;
+  border: 0;
+  text-align: center;
+  padding: 1rem 0;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 9px 0px #544b74;
+  -moz-box-shadow: 0px 9px 0px #544b74;
+  box-shadow: 0px 9px 0px #544b74; }
+  .special_button:active {
+    -webkit-box-shadow: 0px 2px 0px #544b74;
+    -moz-box-shadow: 0px 2px 0px #544b74;
+    box-shadow: 0px 2px 0px #544b74;
+    position: relative;
+    top: 7px; }
+
+.cf:before,
+.cf:after {
+  content: '';
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.row {
+  width: 100%; }
+
+.col_1_3 {
+  width: 186px;
+  max-width: 31%;
+  float: left; }
+
+.col_1_2 {
+  width: 180px;
+  max-width: 45%;
+  float: left;
+  margin-right: 20px; }
+  .col_1_2:last-child {
+    margin-right: 0; }
+
+#about {
+  height: 100%;
+  background: #fffff3;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #544b74;
+  font-size: 1rem; }
+
+#how_to {
+  height: 100%;
+  background: #2b3138;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fffff3;
+  font-size: 1rem; }
+  #how_to ul {
+    padding: 0; }
+
+.container {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5.5rem 0;
+  height: 100%; }
+  .container #calculator {
+    background: #566270;
+    border-bottom: 6px solid #2b3138;
+    border-radius: 16px;
+    padding: 1.5rem 0;
+    text-align: center; }
+    .container #calculator .wrapper {
+      width: 900px;
+      max-width: 90%;
+      margin: 0 auto; }
+      .container #calculator .wrapper #screen {
+        width: 100%;
+        min-height: 8rem;
+        background: #fffff3;
+        border: 10px solid #e0e3da;
+        border-radius: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: right; }
+        .container #calculator .wrapper #screen #display {
+          font-weight: normal;
+          padding: 0 1.5rem;
+          width: 100%;
+          max-width: 100%;
+          word-wrap: break-word;
+          text-transform: uppercase; }
+      .container #calculator .wrapper #desc {
+        width: 100%;
+        color: #fffff3;
+        font-weight: bold;
+        margin-bottom: 20px; }
+        .container #calculator .wrapper #desc #from {
+          float: left; }
+        .container #calculator .wrapper #desc #to {
+          float: right; }
+      .container #calculator .wrapper #buttons {
+        width: 100%;
+        margin-bottom: 20px; }
+        .container #calculator .wrapper #buttons #numbers {
+          width: 600px;
+          max-width: 60%;
+          float: left; }
+        .container #calculator .wrapper #buttons #letters {
+          display: block;
+          width: 400px;
+          max-width: 40%;
+          float: right; }
+          .container #calculator .wrapper #buttons #letters:last-child {
+            margin-right: 0; }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Projekt na 5/6 | Kalkulator</title>
+	<!-- Normalize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<!-- My styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section id="about" class="cf">
+		<h1>Kalkulator, projekt na ocene 5/6</h1>
+		<small>Wykonal Michal Piotrowski</small>
+	</section>
+
+	<section id="how_to">
+		<h1>Aby rozpoczac nalezy</h1>
+		<ul>
+			<li>Wybrac system z ktorego chce sie przeliczac</li>
+			<li>Przyciski aktywuja sie dopiero po wybraniu systemu</li>
+			<li>Kalkulator domyslnie przelicza na system binarny</li>
+			<li>Nacisniecie przyciku '=' spowoduje przeliczenie wartosci</li>
+		</ul>
+	</section>
+
+	<div class="container">
+		<section id="calculator">
+			<div class="wrapper">
+				<section id="screen">
+					<h1 id='display'>
+						
+					</h1>
+				</section>
+
+				<section id="desc" class="cf">
+					<div id="from">
+						<h2>Przelicz z: </h2>
+						<form>
+							<input type="radio" name='value_from' value="2"> Dwójkowy <br>
+							<input type="radio" name='value_from' value="8"> Ósemkowy <br>
+							<input type="radio" name='value_from' value="10"> Dziesiętny <br>
+							<input type="radio" name='value_from' value="16"> Szesnastkowy <br>
+						</form>
+					</div>
+
+					<div id="to">
+						<h2>Przelicz na: </h2>
+						<form>
+							<input type="radio" name='value_to' value="2" checked> Dwójkowy <br>
+							<input type="radio" name='value_to' value="8"> Ósemkowy <br>
+							<input type="radio" name='value_to' value="10"> Dziesiętny <br>
+							<input type="radio" name='value_to' value="16"> Szesnastkowy <br>
+						</form>
+					</div>
+				</section>
+
+				<section id="buttons" class="cf">
+					<div id="numbers">
+						<div class="col_1_3">
+							<input type='button' class="button" name="octa_btn" value='7' disabled>
+							<input type='button' class="button" name="octa_btn" value='4' disabled>
+							<input type='button' class="button" name="bin_btn" value='1' disabled>
+						</div>
+						<div class="col_1_3">
+							<input type='button' class="button" name="dec_btn" value='8' disabled>
+							<input type='button' class="button" name="octa_btn" value='5' disabled>
+							<input type='button' class="button" name="octa_btn" value='2' disabled>
+							<input type='button' class="button" name="bin_btn" value='0' disabled>
+						</div>
+						<div class="col_1_3">
+							<input type='button' class="button" name="dec_btn" value='9' disabled>
+							<input type='button' class="button" name="octa_btn" value='6' disabled>
+							<input type='button' class="button" name="octa_btn" value='3' disabled>
+						</div>
+					</div>
+
+					<div id="letters">
+						<div class="col_1_2">
+							<form>
+								<input type='button' class="button" name="hexa_btn" value='E' disabled>
+								<input type='button' class="button" name="hexa_btn" value='C' disabled>
+								<input type='button' class="button" name="hexa_btn" value='A' disabled>
+							</form>
+						</div>
+						<div class="col_1_2">
+							<form>
+								<input type='button' class="button" name="hexa_btn" value='F' disabled>
+								<input type='button' class="button" name="hexa_btn" value='D' disabled>
+								<input type='button' class="button" name="hexa_btn" value='B' disabled>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<form>
+					<input type="button" name='function_keys' class='special_button' id='send' value='=' disabled>
+					<input type="button" name='function_keys' class='special_button' id='backspace' value='&larr;' disabled>
+					<input type="button" class='special_button' id='clear' value='Del'>
+				</form>
+			</div>
+		</section>
+	</div>
+
+	<script src='js/app.js'></script>
+</body>
+</html>
